@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+@import "~boxicons/css/boxicons.min.css";
+
+$container-max-widths: (
+    md: 540px,
+    lg: 720px,
+    xl: 960px,
+    xxl: 1320px
+);
+
+$spacer: 1.15rem;
+
+$font-family-base: "Lato", sans-serif;
+$font-size-base: 0.9rem;
+
+$headings-margin-bottom: 0.4rem;
+$headings-font-family: $font-family-base;
+$headings-font-weight: 500;
+$headings-line-height: 1.3rem;
+
+$border-radius: 0rem;
+$border-radius-lg: $border-radius;
+
+$primary: #102542;
+$danger: #c44536;
+$warning: #e55555;
+$success: #197278;
+$secondary: #8f857d;
+$dark: #433633;
+$light: #fff9fb;
+
+$offcanvas-horizontal-width: 240px;
+$offcanvas-padding-y: 2rem;
+$offcanvas-border-color: transparent;
+$card-border-color: transparent;
+
+$form-feedback-valid-color: $secondary;
+$form-feedback-invalid-color: $primary;
+
+$breadcrumb-margin-bottom: 0rem;
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+button {
+    text-decoration: none !important;
+}
+
+section, header {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    margin-left: 240px;
+}
+
+header {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./assets/images/default.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white !important;
+}
+
+
+@media (max-width: 1199.98px) {
+    main {
+        margin-left: 0px;
+    }
+}
